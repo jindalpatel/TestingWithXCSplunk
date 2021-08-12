@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		682296B126C599B600D2AD60 /* TestingWithXCSplunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */; };
-		682296B226C599B600D2AD60 /* TestingWithXCSplunk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */; };
-		682296BB26C59BD600D2AD60 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */; };
+		682296B226C599B600D2AD60 /* TestingWithXCSplunk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */; platformFilter = ios; };
+		682296BB26C59BD600D2AD60 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,7 +80,6 @@
 				682296A826C599B600D2AD60 /* Sources */,
 				682296A926C599B600D2AD60 /* Frameworks */,
 				682296AA26C599B600D2AD60 /* CopyFiles */,
-				682296BC26C59CD300D2AD60 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -121,26 +120,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		682296BC26C59CD300D2AD60 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nSCRIPT=`/usr/bin/find \"${SRCROOT}\" -name splunkmint_postbuild_dsym_upload_script.sh | head -n 1`\n\n/bin/bash \"${SCRIPT}\" \"275b7da9\" \"2977fd4e446c61c0984a600\" -f\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		682296A826C599B600D2AD60 /* Sources */ = {
