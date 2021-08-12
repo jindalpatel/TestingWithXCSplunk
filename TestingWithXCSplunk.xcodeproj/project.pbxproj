@@ -47,6 +47,7 @@
 		682296A326C599B600D2AD60 = {
 			isa = PBXGroup;
 			children = (
+				682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */,
 				682296AE26C599B600D2AD60 /* TestingWithXCSplunk */,
 				682296AD26C599B600D2AD60 /* Products */,
 			);
@@ -63,7 +64,6 @@
 		682296AE26C599B600D2AD60 /* TestingWithXCSplunk */ = {
 			isa = PBXGroup;
 			children = (
-				682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */,
 				682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */,
 				682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */,
 			);
