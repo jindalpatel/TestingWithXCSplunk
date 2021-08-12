@@ -6,7 +6,12 @@
 //
 
 #import "TestingWithXCSplunk.h"
+#import "SplunkMint.h"
 
 @implementation TestingWithXCSplunk
+
+-(void)testSplunk {
+    
+}
 
 @end

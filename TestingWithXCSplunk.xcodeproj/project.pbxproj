@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		682296B126C599B600D2AD60 /* TestingWithXCSplunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */; };
 		682296B226C599B600D2AD60 /* TestingWithXCSplunk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */; };
+		682296BB26C59BD600D2AD60 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		682296AC26C599B600D2AD60 /* libTestingWithXCSplunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestingWithXCSplunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingWithXCSplunk.h; sourceTree = "<group>"; };
 		682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingWithXCSplunk.m; sourceTree = "<group>"; };
+		682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682296BB26C59BD600D2AD60 /* SplunkMint.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 		682296AE26C599B600D2AD60 /* TestingWithXCSplunk */ = {
 			isa = PBXGroup;
 			children = (
+				682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */,
 				682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */,
 				682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */,
 			);
@@ -76,6 +80,7 @@
 				682296A826C599B600D2AD60 /* Sources */,
 				682296A926C599B600D2AD60 /* Frameworks */,
 				682296AA26C599B600D2AD60 /* CopyFiles */,
+				682296BC26C59CD300D2AD60 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -116,6 +121,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		682296BC26C59CD300D2AD60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nSCRIPT=`/usr/bin/find \"${SRCROOT}\" -name splunkmint_postbuild_dsym_upload_script.sh | head -n 1`\n\n/bin/bash \"${SCRIPT}\" \"275b7da9\" \"2977fd4e446c61c0984a600\" -f\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		682296A826C599B600D2AD60 /* Sources */ = {
@@ -180,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -233,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -273,7 +298,7 @@
 				682296B426C599B600D2AD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		682296B526C599B600D2AD60 /* Build configuration list for PBXNativeTarget "TestingWithXCSplunk" */ = {
 			isa = XCConfigurationList;
@@ -282,7 +307,7 @@
 				682296B726C599B600D2AD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
