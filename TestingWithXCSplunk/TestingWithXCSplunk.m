@@ -11,7 +11,7 @@
 @implementation TestingWithXCSplunk
 
 -(void)testSplunk {
-    
+    [[Mint sharedInstance]flush];
 }
 
 @end
