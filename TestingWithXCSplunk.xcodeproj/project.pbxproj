@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20D39CE645F240E4F5FE82A5 /* Pods_TestingWithXCSplunk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE37850A3878F82B05AE0535 /* Pods_TestingWithXCSplunk.framework */; };
 		682296B126C599B600D2AD60 /* TestingWithXCSplunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */; };
 		682296B226C599B600D2AD60 /* TestingWithXCSplunk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */; platformFilter = ios; };
 		688B9C6F26C62C1000FA3CF1 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688B9C6E26C62C1000FA3CF1 /* SplunkMint.xcframework */; platformFilter = ios; };
@@ -26,10 +27,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		356C9C4130EE004A126A5303 /* Pods-TestingWithXCSplunk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingWithXCSplunk.debug.xcconfig"; path = "Target Support Files/Pods-TestingWithXCSplunk/Pods-TestingWithXCSplunk.debug.xcconfig"; sourceTree = "<group>"; };
 		682296AC26C599B600D2AD60 /* libTestingWithXCSplunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestingWithXCSplunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingWithXCSplunk.h; sourceTree = "<group>"; };
 		682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingWithXCSplunk.m; sourceTree = "<group>"; };
 		688B9C6E26C62C1000FA3CF1 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
+		791271BF640292BDCF2ED42E /* Pods-TestingWithXCSplunk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingWithXCSplunk.release.xcconfig"; path = "Target Support Files/Pods-TestingWithXCSplunk/Pods-TestingWithXCSplunk.release.xcconfig"; sourceTree = "<group>"; };
+		BE37850A3878F82B05AE0535 /* Pods_TestingWithXCSplunk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestingWithXCSplunk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				688B9C6F26C62C1000FA3CF1 /* SplunkMint.xcframework in Frameworks */,
+				20D39CE645F240E4F5FE82A5 /* Pods_TestingWithXCSplunk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 				688B9C6E26C62C1000FA3CF1 /* SplunkMint.xcframework */,
 				682296AE26C599B600D2AD60 /* TestingWithXCSplunk */,
 				682296AD26C599B600D2AD60 /* Products */,
+				CDAC2EA2FF4FCD3A5A49183E /* Pods */,
+				F57D4CDF81CE88B31BDE9BBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = TestingWithXCSplunk;
 			sourceTree = "<group>";
 		};
+		CDAC2EA2FF4FCD3A5A49183E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				356C9C4130EE004A126A5303 /* Pods-TestingWithXCSplunk.debug.xcconfig */,
+				791271BF640292BDCF2ED42E /* Pods-TestingWithXCSplunk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F57D4CDF81CE88B31BDE9BBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE37850A3878F82B05AE0535 /* Pods_TestingWithXCSplunk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 682296B526C599B600D2AD60 /* Build configuration list for PBXNativeTarget "TestingWithXCSplunk" */;
 			buildPhases = (
+				BD0A14A4F4A3A1936F197342 /* [CP] Check Pods Manifest.lock */,
 				682296A826C599B600D2AD60 /* Sources */,
 				682296A926C599B600D2AD60 /* Frameworks */,
 				682296AA26C599B600D2AD60 /* CopyFiles */,
@@ -120,6 +146,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD0A14A4F4A3A1936F197342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestingWithXCSplunk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		682296A826C599B600D2AD60 /* Sources */ = {
@@ -247,6 +298,7 @@
 		};
 		682296B626C599B600D2AD60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 356C9C4130EE004A126A5303 /* Pods-TestingWithXCSplunk.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -258,6 +310,7 @@
 		};
 		682296B726C599B600D2AD60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 791271BF640292BDCF2ED42E /* Pods-TestingWithXCSplunk.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";

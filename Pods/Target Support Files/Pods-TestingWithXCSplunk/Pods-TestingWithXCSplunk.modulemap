@@ -1,0 +1,6 @@
+framework module Pods_TestingWithXCSplunk {
+  umbrella header "Pods-TestingWithXCSplunk-umbrella.h"
+
+  export *
+  module * { export * }
+}
