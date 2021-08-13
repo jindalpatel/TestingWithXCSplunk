@@ -6,12 +6,12 @@
 //
 
 #import "TestingWithXCSplunk.h"
-#import "SplunkMint.h"
+//#import "SplunkMint.h"
 
 @implementation TestingWithXCSplunk
 
 -(void)testSplunk {
-    [[Mint sharedInstance]flush];
+   // [[Mint sharedInstance]flush];
 }
 
 @end

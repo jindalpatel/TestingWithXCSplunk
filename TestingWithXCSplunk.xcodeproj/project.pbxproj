@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		682296B126C599B600D2AD60 /* TestingWithXCSplunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */; };
 		682296B226C599B600D2AD60 /* TestingWithXCSplunk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */; platformFilter = ios; };
-		682296BB26C59BD600D2AD60 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +28,6 @@
 		682296AC26C599B600D2AD60 /* libTestingWithXCSplunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestingWithXCSplunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingWithXCSplunk.h; sourceTree = "<group>"; };
 		682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingWithXCSplunk.m; sourceTree = "<group>"; };
-		682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SplunkMint.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682296BB26C59BD600D2AD60 /* SplunkMint.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +44,6 @@
 		682296A326C599B600D2AD60 = {
 			isa = PBXGroup;
 			children = (
-				682296BA26C59BD600D2AD60 /* SplunkMint.xcframework */,
 				682296AE26C599B600D2AD60 /* TestingWithXCSplunk */,
 				682296AD26C599B600D2AD60 /* Products */,
 			);
