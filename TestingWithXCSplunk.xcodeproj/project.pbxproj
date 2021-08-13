@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		682296B126C599B600D2AD60 /* TestingWithXCSplunk.m in Sources */ = {isa = PBXBuildFile; fileRef = 682296B026C599B600D2AD60 /* TestingWithXCSplunk.m */; };
 		682296B226C599B600D2AD60 /* TestingWithXCSplunk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 682296AF26C599B600D2AD60 /* TestingWithXCSplunk.h */; platformFilter = ios; };
-		688B9C6F26C62C1000FA3CF1 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688B9C6E26C62C1000FA3CF1 /* SplunkMint.xcframework */; };
+		688B9C6F26C62C1000FA3CF1 /* SplunkMint.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688B9C6E26C62C1000FA3CF1 /* SplunkMint.xcframework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
